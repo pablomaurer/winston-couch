@@ -1,0 +1,38 @@
+{
+  "name": "winston-couch",
+  "description": "Winston Transport for CouchDB",
+  "version": "0.0.2",
+  "author": {
+    "author": "Pablo Maurer",
+    "email": "maurer@screeneyes.com",
+    "url": "http://maurer-newmedia.ch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mnewmedia/winston-couch"
+  },
+  "keywords": [
+    "couch",
+    "pouch",
+    "couchdb",
+    "pouchdb",
+    "winston",
+    "logging",
+    "tools",
+    "remote-log",
+    "remote-logging",
+    "log"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.11.2",
+    "pouchdb": "^5.2.1"
+  },
+  "devDependencies": {
+    "winston": "^2.1.1"
+  }
+}
