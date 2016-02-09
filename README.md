@@ -22,7 +22,7 @@ logger.add(winston.transports.Couch, {
 The pouchOptions will directly be passed to the PouchDB Constructor, so look on [pouchdb.com](http://pouchdb.com/api.html#create_database) for further information.
 I only implemented the log function, cause at the moment I don't need more. Feel free to implement missing stuff and send a pr. Would make the whole world a bit better. =)
 
-## Examples
+### Examples
 ```js
 {
   "_id": "log-1455018843770",
@@ -34,7 +34,7 @@ I only implemented the log function, cause at the moment I don't need more. Feel
 }
 ```
 
-### how to get all logs [pouchdb.com allDocs](http://pouchdb.com/api.html#batch_fetch)
+#### how to get all logs [pouchdb-allDocs](http://pouchdb.com/api.html#batch_fetch)
 ```js
 db.allDocs({
   include_docs: true,
@@ -46,7 +46,7 @@ db.allDocs({
 });
 ```
 
-### how to get all logs in a time range [pouchdb.com allDocs](http://pouchdb.com/api.html#batch_fetch)
+#### how to get all logs in a time range [pouchdb-allDocs](http://pouchdb.com/api.html#batch_fetch)
 just add `startkey` and `endkey` as properties in format <log>-<timestampInMilliseconds>-\uffff
 ```js
 db.allDocs({
