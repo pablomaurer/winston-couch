@@ -1,7 +1,7 @@
 {
   "name": "winston-couch",
   "description": "Winston Transport for CouchDB",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "author": {
     "author": "Pablo Maurer",
     "email": "maurer@screeneyes.com",
