@@ -1,11 +1,12 @@
 winston-pouchdb
 ===============
 
-A Minimal PouchDB transport for winston.
+A Minimal PouchDB transport for [winston](https://github.com/winstonjs/winston).
 
 ## Setup
 
 ```bash
+npm install winston --save
 npm install winston-couch --save
 ```
 
@@ -22,7 +23,7 @@ logger.add(winston.transports.Couch, {
 The pouchOptions will directly be passed to the PouchDB Constructor, so look on [pouchdb.com](http://pouchdb.com/api.html#create_database) for further information.
 I only implemented the log function, cause at the moment I don't need more. Feel free to implement missing stuff and send a pr. Would make the whole world a bit better. =)
 
-### Example Log and How To get them
+## Example Log and How To get them
 example log
 ```js
 {
@@ -71,3 +72,7 @@ db.allDocs({
   console.log(err);
 });
 ```
+
+## Other Stuff
+There is also [winston-couchdb](https://github.com/winstonjs/winston-couchdb) but I prefer PouchDB instead of the [Cradle CouchDB Client](https://github.com/flatiron/cradle). 
+Also I wanted to have a meaningful id so i don't have to use `views`, since i really hat em =) Even there is also [PouchDB-Find](https://github.com/nolanlawson/pouchdb-find).
